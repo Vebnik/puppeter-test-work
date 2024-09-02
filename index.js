@@ -45,6 +45,10 @@ const getPage = async (url, targetRegion) => {
   const element = await page.$(selector);
 
   // check dir
+  if (!fs.existsSync(`./data`)) {
+    fs.mkdirSync(`./data`);
+  }
+
   if (!fs.existsSync(`./data/${url.split("/").at(-1)}`)) {
     fs.mkdirSync(`./data/${url.split("/").at(-1)}`);
   }
