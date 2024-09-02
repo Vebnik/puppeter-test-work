@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "name": "puppeter-screensaver",
+  "version": "1.0.0",
+  "description": "for make screenshot and scrap data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NikEvs",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^23.2.1"
+  }
+}
